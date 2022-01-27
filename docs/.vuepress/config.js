@@ -8,7 +8,7 @@ module.exports = {
     title: 'DaySnap',
     description: 'DaySnap | one day one snap',
     base: '/',
-    dest: 'dist',
+    // dest: 'dist',
     host: '0.0.0.0',
     port: '12580',
     head: [

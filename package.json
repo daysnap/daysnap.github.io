@@ -1,0 +1,19 @@
+{
+  "name": "daysnap.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "node-dir": "^0.1.17",
+    "vuepress": "^1.8.2"
+  }
+}

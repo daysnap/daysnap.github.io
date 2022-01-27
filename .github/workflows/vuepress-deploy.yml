@@ -13,7 +13,7 @@ jobs:
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: username/repo
+          TARGET_REPO: daysnap/daysnap.github.io
           TARGET_BRANCH: gh_pages
           BUILD_SCRIPT: npm install && npm build
           BUILD_DIR: docs/.vuepress/dist

@@ -1,0 +1,19 @@
+name: DaySnap Home Page
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build and Deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: username/repo
+          TARGET_BRANCH: gh_pages
+          BUILD_SCRIPT: npm install && npm build
+          BUILD_DIR: docs/.vuepress/dist
